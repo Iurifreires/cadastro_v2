@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="../cod.js"></script>
+</head>
+<body>
+    <div class="page">
+        <form method="post" action="/login" class="formLogin">
+            <h1><i>Entrar</i></h1>
+
+            <label for="login"><strong>Login</strong></label>
+            <input oninput="mascara(this)" name="login" type="email"  id="login" placeholder="Digite seu login" required />
+            <label for="senha"><strong>Senha</strong></label>
+            <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required />
+            <a href="../recupsenh.html">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" class="btn"/>
+
+            <a href="../cadastro.html">Cadastre-se </a>
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.example.cadastro.Model;
+package com.example.cadastro.User;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,7 +6,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 @Entity (name = "user")
 @Table (name = "usuarios")
 @Getter
@@ -19,17 +20,17 @@ public class User {
     private Long id;
     private String login;
     private String name;
-    private Date datanasc;
+    private LocalDate datanasc;
     private Boolean ativo;
     private String senha;
-    private Date datacad;
+    private LocalDate datacad = LocalDate.now();
 
 
     public User(UserRequestDTO data){
       this.login = data.login();
       this.name = data.name();
       this.datanasc = data.datanasc();
-      this.datacad = data.datacad();
+      this.datacad = LocalDate.now();
       this.ativo = data.ativo();
       this.senha = data.senha();
     }

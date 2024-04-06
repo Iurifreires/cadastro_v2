@@ -1,6 +1,7 @@
-package com.example.cadastro.Model;
+package com.example.cadastro.User;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
+    User findByLogin(String login);
 }

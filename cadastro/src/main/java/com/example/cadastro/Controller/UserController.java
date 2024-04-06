@@ -1,9 +1,9 @@
 package com.example.cadastro.Controller;
 
-import com.example.cadastro.Model.User;
-import com.example.cadastro.Model.UserRepository;
-import com.example.cadastro.Model.UserRequestDTO;
-import com.example.cadastro.Model.UserResponseDTO;
+import com.example.cadastro.User.User;
+import com.example.cadastro.User.UserRepository;
+import com.example.cadastro.User.UserRequestDTO;
+import com.example.cadastro.User.UserResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
